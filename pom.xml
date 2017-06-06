@@ -15,6 +15,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<ranklib.version>2.9-SNAPSHOT</ranklib.version>
+		<version.lucene>6.4.0</version.lucene>
 	</properties>
 
 	<dependencies>
@@ -34,6 +35,12 @@
 			<groupId>edu.umass.ciir</groupId>
 			<artifactId>RankLib</artifactId>
 			<version>${ranklib.version}</version>
+		</dependency>
+		<!-- lucene分析 -->
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-core</artifactId>
+			<version>${version.lucene}</version>
 		</dependency>
 	</dependencies>
 
