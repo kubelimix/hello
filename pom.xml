@@ -18,7 +18,7 @@
         <hadoop.version>2.6.5</hadoop.version>
         <oozie.version>4.1.0-cdh5.12.0</oozie.version>
         <commons.lang3.version>3.7</commons.lang3.version>
-        <commons-compress.version>1.18</commons-compress.version>
+        <commons-compress.version>1.21</commons-compress.version>
         <swt.version>3.3.0-v3346</swt.version>
         <junit.version>4.12</junit.version>
     </properties>
