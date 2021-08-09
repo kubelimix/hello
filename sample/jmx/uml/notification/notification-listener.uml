@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>javax.management.Notification</OriginalElement>
+  <nodes>
+    <node x="0.0" y="160.0">java.util.EventListener</node>
+    <node x="54.75" y="240.0">javax.management.NotificationListener</node>
+    <node x="96.99999999999999" y="320.0">javax.management.NotificationBroadcaster</node>
+    <node x="71.25" y="400.0">javax.management.NotificationBroadcasterSupport</node>
+    <node x="154.0" y="160.0">javax.management.Notification</node>
+    <node x="152.5" y="80.0">java.util.EventObject</node>
+    <node x="156.0" y="0.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="javax.management.Notification" target="java.util.EventObject">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationBroadcasterSupport" target="javax.management.Notification">
+      <point x="82.33333333333331" y="-15.0" />
+      <point x="277.0833333333333" y="375.0" />
+      <point x="304.5" y="375.0" />
+      <point x="304.5" y="215.0" />
+      <point x="255.66666666666663" y="215.0" />
+      <point x="40.66666666666666" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationListener" target="java.util.EventListener">
+      <point x="-57.0" y="-15.0" />
+      <point x="83.25" y="215.0" />
+      <point x="67.0" y="215.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationBroadcasterSupport" target="javax.management.NotificationListener">
+      <point x="-82.33333333333331" y="-15.0" />
+      <point x="112.41666666666669" y="375.0" />
+      <point x="86.5" y="375.0" />
+      <point x="86.5" y="295.0" />
+      <point x="97.5" y="295.0" />
+      <point x="-42.75" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationBroadcasterSupport" target="javax.management.NotificationBroadcaster">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.EventObject" target="java.io.Serializable">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationBroadcaster" target="javax.management.NotificationListener">
+      <point x="0.0" y="-15.0" />
+      <point x="195.5" y="295.0" />
+      <point x="183.0" y="295.0" />
+      <point x="42.75" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationListener" target="javax.management.Notification">
+      <point x="57.0" y="-15.0" />
+      <point x="197.25" y="215.0" />
+      <point x="215.0" y="215.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="137.0" y="215.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

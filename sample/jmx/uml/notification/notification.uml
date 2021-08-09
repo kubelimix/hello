@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>javax.management.NotificationListener</OriginalElement>
+  <nodes>
+    <node x="215.23943661971833" y="-29.2300469483568">java.util.EventListener</node>
+    <node x="334.95749217527384" y="130.7699530516432">javax.management.NotificationBroadcaster</node>
+    <node x="239.89360328638497" y="50.7699530516432">javax.management.NotificationListener</node>
+    <node x="474.6658255086072" y="50.7699530516432">javax.management.NotificationFilter</node>
+    <node x="369.3584181011998" y="290.7699530516432">javax.management.NotificationBroadcasterSupport</node>
+    <node x="577.5408255086072" y="130.7699530516432">javax.management.NotificationFilterSupport</node>
+    <node x="349.8584181011998" y="210.7699530516432">javax.management.NotificationEmitter</node>
+    <node x="500.7010106937924" y="-29.2300469483568">javax.management.Notification</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="javax.management.NotificationFilter" target="javax.management.Notification">
+      <point x="0.0" y="-15.0" />
+      <point x="550.6658255086072" y="30.7699530516432" />
+      <point x="561.7010106937923" y="30.7699530516432" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationFilterSupport" target="javax.management.NotificationFilter">
+      <point x="-50.5" y="-15.0" />
+      <point x="628.0408255086072" y="105.7699530516432" />
+      <point x="607.6658255086072" y="105.7699530516432" />
+      <point x="57.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationBroadcasterSupport" target="javax.management.Notification">
+      <point x="92.625" y="-15.0" />
+      <point x="585.4834181011997" y="265.7699530516432" />
+      <point x="790.0408255086072" y="265.7699530516432" />
+      <point x="790.0408255086072" y="20.7699530516432" />
+      <point x="610.5010106937924" y="20.7699530516432" />
+      <point x="48.80000000000001" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationListener" target="java.util.EventListener">
+      <point x="-57.0" y="-15.0" />
+      <point x="268.393603286385" y="30.7699530516432" />
+      <point x="282.23943661971833" y="30.7699530516432" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationEmitter" target="javax.management.NotificationListener">
+      <point x="-55.33333333333334" y="-15.0" />
+      <point x="377.5250847678665" y="185.7699530516432" />
+      <point x="318.33249217527384" y="185.7699530516432" />
+      <point x="318.33249217527384" y="105.7699530516432" />
+      <point x="325.393603286385" y="105.7699530516432" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationBroadcaster" target="javax.management.NotificationFilter">
+      <point x="49.25" y="-15.0" />
+      <point x="482.7074921752739" y="105.7699530516432" />
+      <point x="493.6658255086072" y="105.7699530516432" />
+      <point x="-57.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationEmitter" target="javax.management.NotificationBroadcaster">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationBroadcasterSupport" target="javax.management.NotificationListener">
+      <point x="-92.625" y="-15.0" />
+      <point x="400.2334181011998" y="265.7699530516432" />
+      <point x="300.0343440271257" y="265.7699530516432" />
+      <point x="300.0343440271257" y="105.7699530516432" />
+      <point x="268.393603286385" y="105.7699530516432" />
+      <point x="-57.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationFilterSupport" target="javax.management.Notification">
+      <point x="50.5" y="-15.0" />
+      <point x="729.0408255086072" y="30.7699530516432" />
+      <point x="586.1010106937924" y="30.7699530516432" />
+      <point x="24.399999999999977" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationBroadcaster" target="javax.management.NotificationListener">
+      <point x="-49.25" y="-15.0" />
+      <point x="384.20749217527384" y="105.7699530516432" />
+      <point x="382.393603286385" y="105.7699530516432" />
+      <point x="57.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationBroadcasterSupport" target="javax.management.NotificationEmitter">
+      <point x="-30.875" y="-15.0" />
+      <point x="461.9834181011998" y="265.7699530516432" />
+      <point x="432.8584181011998" y="265.7699530516432" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationBroadcasterSupport" target="javax.management.NotificationFilter">
+      <point x="30.875" y="-15.0" />
+      <point x="523.7334181011997" y="265.7699530516432" />
+      <point x="567.0408255086072" y="265.7699530516432" />
+      <point x="567.0408255086072" y="105.7699530516432" />
+      <point x="569.6658255086072" y="105.7699530516432" />
+      <point x="19.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationEmitter" target="javax.management.NotificationFilter">
+      <point x="55.333333333333314" y="-15.0" />
+      <point x="488.1917514345331" y="185.7699530516432" />
+      <point x="542.457492175274" y="185.7699530516432" />
+      <point x="542.457492175274" y="105.7699530516432" />
+      <point x="531.6658255086072" y="105.7699530516432" />
+      <point x="-19.0" y="15.0" />
+    </edge>
+    <edge source="javax.management.NotificationListener" target="javax.management.Notification">
+      <point x="57.0" y="-15.0" />
+      <point x="382.393603286385" y="30.7699530516432" />
+      <point x="537.3010106937925" y="30.7699530516432" />
+      <point x="-24.399999999999977" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7526501766784452" x="556.0" y="277.4225352112676" />
+  <SelectedNodes>
+    <node>java.util.EventListener</node>
+    <node>javax.management.NotificationBroadcaster</node>
+    <node>javax.management.NotificationListener</node>
+    <node>javax.management.NotificationFilter</node>
+    <node>javax.management.NotificationBroadcasterSupport</node>
+    <node>javax.management.NotificationFilterSupport</node>
+    <node>javax.management.NotificationEmitter</node>
+    <node>javax.management.Notification</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

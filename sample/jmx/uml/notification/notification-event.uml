@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>javax.management.Notification</OriginalElement>
+  <nodes>
+    <node x="145.0" y="470.0">javax.management.remote.JMXConnectionNotification</node>
+    <node x="395.0" y="210.0">javax.management.MBeanServerNotification</node>
+    <node x="106.0" y="284.0">javax.management.timer.TimerNotification</node>
+    <node x="31.0" y="368.0">javax.management.monitor.MonitorNotification</node>
+    <node x="80.0" y="71.0">com.sun.jmx.snmp.agent.SnmpTableEntryNotification</node>
+    <node x="251.0" y="142.0">javax.management.AttributeChangeNotification</node>
+    <node x="221.0" y="213.0">javax.management.Notification</node>
+    <node x="0.0" y="185.0">javax.management.relation.RelationNotification</node>
+    <node x="277.0" y="384.0">com.sun.management.jmx.TraceNotification</node>
+    <node x="272.0" y="0.0">javax.management.timer.TimerAlarmClockNotification</node>
+    <node x="359.0" y="313.0">java.util.EventObject</node>
+    <node x="468.0" y="469.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="javax.management.timer.TimerAlarmClockNotification" target="javax.management.Notification">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="javax.management.timer.TimerNotification" target="javax.management.Notification">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="javax.management.Notification" target="java.util.EventObject">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="javax.management.relation.RelationNotification" target="javax.management.Notification">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="javax.management.AttributeChangeNotification" target="javax.management.Notification">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.sun.jmx.snmp.agent.SnmpTableEntryNotification" target="javax.management.Notification">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="javax.management.MBeanServerNotification" target="javax.management.Notification">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="javax.management.remote.JMXConnectionNotification" target="javax.management.Notification">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.sun.management.jmx.TraceNotification" target="javax.management.Notification">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="javax.management.monitor.MonitorNotification" target="javax.management.Notification">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="java.util.EventObject" target="java.io.Serializable">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="298.5" y="250.0" />
+  <SelectedNodes>
+    <node>javax.management.MBeanServerNotification</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
