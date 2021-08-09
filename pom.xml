@@ -20,7 +20,7 @@
         <commons.lang3.version>3.7</commons.lang3.version>
         <commons-compress.version>1.18</commons-compress.version>
         <swt.version>3.3.0-v3346</swt.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <repositories>
