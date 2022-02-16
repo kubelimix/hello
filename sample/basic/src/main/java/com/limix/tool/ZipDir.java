@@ -7,6 +7,9 @@ import java.util.Scanner;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
+/**
+ * 压缩文件处理
+ */
 public class ZipDir {
 
     public static void main(String[] args){

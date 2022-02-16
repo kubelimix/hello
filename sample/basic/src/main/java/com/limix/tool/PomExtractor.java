@@ -6,9 +6,11 @@ import java.io.IOException;
 import java.util.Enumeration;
 import java.util.Scanner;
 import java.util.zip.ZipEntry;
-import java.util.zip.ZipException;
 import java.util.zip.ZipFile;
 
+/**
+ * Pom信息提取
+ */
 public class PomExtractor {
     private StringBuilder stringBuilder = new StringBuilder(10240);
     private String groupId;
@@ -16,11 +18,14 @@ public class PomExtractor {
     private String version;
 
     private PomExtractor() {
-
     }
 
     public static PomExtractor getInstance() {
         return PomExtractorHolder.pomExtractor;
+    }
+
+    private static class PomExtractorHolder {
+        private final static PomExtractor pomExtractor = new PomExtractor();
     }
 
     public static void main(String[] args) {
@@ -29,7 +34,7 @@ public class PomExtractor {
             return;
         }
         File cwd = new File(args[0]);
-        File[] archives = cwd.listFiles(new jarFilter());
+        File[] archives = cwd.listFiles(new JarFilter());
         PomExtractor pomExtractor = PomExtractor.getInstance();
         for (int j = 0; j < archives.length; j++) {
             pomExtractor.commence();
@@ -51,7 +56,7 @@ public class PomExtractor {
         if (!file.exists()) return;
         try (ZipFile zipFile = new ZipFile(file)) {
             Enumeration<? extends ZipEntry> entries = zipFile.entries();
-            while (entries.hasMoreElements()) {
+            while (entries.hasMoreElements()) { // 迭代器模式
                 ZipEntry entry = entries.nextElement();
                 if (entry.getName().endsWith("pom.xml")) {
                     resetData();
@@ -94,14 +99,10 @@ public class PomExtractor {
     }
 
 
-    static class jarFilter implements FileFilter {
+    static class JarFilter implements FileFilter {
         public boolean accept(File pathName) {
             String upcase = pathName.getName().toUpperCase();
             return upcase.endsWith(".JAR");
         }
-    }
-
-    private static class PomExtractorHolder {
-        private final static PomExtractor pomExtractor = new PomExtractor();
     }
 }
