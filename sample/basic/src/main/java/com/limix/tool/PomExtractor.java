@@ -20,6 +20,10 @@ public class PomExtractor {
     private PomExtractor() {
     }
 
+    /**
+     * 设计模式 单例模式
+     * @return
+     */
     public static PomExtractor getInstance() {
         return PomExtractorHolder.pomExtractor;
     }
@@ -56,7 +60,7 @@ public class PomExtractor {
         if (!file.exists()) return;
         try (ZipFile zipFile = new ZipFile(file)) {
             Enumeration<? extends ZipEntry> entries = zipFile.entries();
-            while (entries.hasMoreElements()) { // 迭代器模式
+            while (entries.hasMoreElements()) { // 设计模式 迭代器模式
                 ZipEntry entry = entries.nextElement();
                 if (entry.getName().endsWith("pom.xml")) {
                     resetData();
