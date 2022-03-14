@@ -74,7 +74,7 @@ public class HostNameRegex {
     }
 
     enum TokenEnum {
-        INIT, NORMAL, MORE;
+        INIT, NORMAL, MORE
     }
 
     class StringToken {
@@ -139,7 +139,7 @@ public class HostNameRegex {
                             hosts.add(prefixToken.getItem() + suffix);
                         }
                     } else {
-                        throw new IOException(String.format("wrong token, prefix is null, suffix[%s]", currentToken.toString()));
+                        throw new IOException(String.format("wrong token, prefix is null, suffix[%s]", currentToken));
                     }
                 }
             }
@@ -180,15 +180,15 @@ public class HostNameRegex {
      */
     class StringTokenizer implements Iterator<StringToken> {
 
-        private Reader reader;
+        private final Reader reader;
         private boolean inMoreBracket = false;
         private String current = "";
         StringToken currentToken = null;
-        private Queue<StringToken> bufferTokens = new ArrayDeque<StringToken>();
+        private final Queue<StringToken> bufferTokens = new ArrayDeque<StringToken>();
 
-        private char LEFT_BRACKET = '[';
-        private char RIGHT_BRACKET = ']';
-        private char COMMA = ',';
+        private final char LEFT_BRACKET = '[';
+        private final char RIGHT_BRACKET = ']';
+        private final char COMMA = ',';
 
         public StringTokenizer(Reader r) {
             if (r == null) {
@@ -199,11 +199,7 @@ public class HostNameRegex {
 
         public boolean hasNext() {
             readToken();
-            if (currentToken.getType() != TokenEnum.INIT) {
-                return true;
-            } else {
-                return false;
-            }
+            return currentToken.getType() != TokenEnum.INIT;
         }
 
         private void reset() {

@@ -15,7 +15,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  */
 public class DiscardServer {
     
-    private int port;
+    private final int port;
     
     public DiscardServer(int port) {
         this.port = port;

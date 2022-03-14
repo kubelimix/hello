@@ -210,8 +210,7 @@ public class SampleLoginModule implements LoginModule {
 
             // assume the user we authenticated is the SamplePrincipal
             userPrincipal = new SamplePrincipal(username);
-            if (!subject.getPrincipals().contains(userPrincipal))
-                subject.getPrincipals().add(userPrincipal);
+            subject.getPrincipals().add(userPrincipal);
 
             if (debug) {
                 System.out.println("\t\t[SampleLoginModule] " +

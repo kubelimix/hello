@@ -12,7 +12,7 @@ import java.util.zip.ZipFile;
  * Pom信息提取
  */
 public class PomExtractor {
-    private StringBuilder stringBuilder = new StringBuilder(10240);
+    private final StringBuilder stringBuilder = new StringBuilder(10240);
     private String groupId;
     private String artifactId;
     private String version;
@@ -97,7 +97,7 @@ public class PomExtractor {
                 }
             }
         } catch (IOException ex) {
-            System.out.println(ex.toString());
+            System.out.println(ex);
         }
         return;
     }

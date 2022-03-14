@@ -10,11 +10,11 @@ public class HeapOOM {
 
     static class OOMObject {
 
-        private String  id;
+        private final String  id;
 
-        private String text;
+        private final String text;
 
-        private String day;
+        private final String day;
 
         public OOMObject(String id, String text, String day){
             this.id = id;

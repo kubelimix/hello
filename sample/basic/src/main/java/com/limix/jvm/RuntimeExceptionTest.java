@@ -2,7 +2,7 @@ package com.limix.jvm;
 
 public class RuntimeExceptionTest {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         try {
             System.out.println("I am here1");

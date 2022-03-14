@@ -21,7 +21,7 @@ public class SamplePrincipal implements Principal, java.io.Serializable {
     /**
      * @serial
      */
-    private String name;
+    private final String name;
 
     /**
      * Create a SamplePrincipal with a Sample username.

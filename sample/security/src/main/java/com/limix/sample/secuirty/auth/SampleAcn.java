@@ -92,7 +92,7 @@ public class SampleAcn {
                   System.err.println("Authentication failed:");
                   System.err.println("  " + le.getMessage());
                   try {
-                      Thread.currentThread().sleep(3000);
+                      Thread.sleep(3000);
                   } catch (Exception e) {
                       // ignore
                   }

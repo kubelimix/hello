@@ -71,7 +71,7 @@ public class Client {
         // Get domains from MBeanServer
         //
         echo("\nDomains:");
-        String domains[] = mbsc.getDomains();
+        String[] domains = mbsc.getDomains();
         Arrays.sort(domains);
         for (String domain : domains) {
             echo("\tDomain = " + domain);

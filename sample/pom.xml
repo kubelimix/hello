@@ -12,11 +12,11 @@
 
     <modules>
         <module>security</module>
-        <module>ranklib</module>
         <module>basic</module>
         <module>netty</module>
         <module>jmx</module>
         <module>swt</module>
         <module>elasticsearch</module>
+        <module>grpc</module>
     </modules>
 </project>
