@@ -5,10 +5,11 @@ import java.util.Queue;
 import java.util.function.Consumer;
 
 /**
+ * 2022-03-14
  * 树遍历
- * LIMIX_INFO 深度遍历- java.util.Queue java.util.LinkedList
- * LIMIX_INFO java.util.Queue, add remove
- *
+ * INFO 深度遍历- java.util.Queue java.util.LinkedList
+ * INFO java.util.Queue, add remove
+ * LIMIX TODO 是否可以使用非循环的方式来进行深度遍历了?
  */
 public class TreeTravel {
 
@@ -97,7 +98,7 @@ public class TreeTravel {
         queue.add(F);
         while (!queue.isEmpty()) {
             Node a = queue.remove();
-            System.out.println(a.text);
+            System.out.print(a.text);
             if (a.left != null) {
                 queue.add(a.left);
             }
